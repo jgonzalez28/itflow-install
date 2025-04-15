@@ -3,8 +3,8 @@
 <?php
 
 // Change to the directory of this script so that all shell commands run here
-//chdir(__DIR__);
+chdir(__DIR__);
 
-exec("git clone https://github.com/jgonzalez28/itflow.git /home/qrcash/web/itdemo-test.quantizeit.com/public_html/clone 2>&1", $output, $return_var);
+exec("git clone https://github.com/jgonzalez28/itflow.git ./itflow 2>&1", $output, $return_var);
 
 echo implode("\n", $output);
